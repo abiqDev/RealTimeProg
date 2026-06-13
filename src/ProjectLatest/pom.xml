@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project identity -->
+    <groupId>edu.university</groupId>
+    <artifactId>RealTimeHealthSystem</artifactId>
+    <version>2.0</version>
+    <packaging>jar</packaging>
+
+    <name>Real-Time Concurrent Health Monitoring System</name>
+    <description>
+        Concurrent Java program demonstrating Threads, Runnable, BlockingQueue,
+        ReentrantLock, synchronized, volatile, thread priorities, join, and parallel streams.
+    </description>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Plugin to run the program with: mvn exec:java -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>Project.RealTimeHealthSystem</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
